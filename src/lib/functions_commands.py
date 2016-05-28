@@ -36,9 +36,12 @@ def check_has_args(command):
 		return True
 
 def check_has_correct_args(message, command):
-	message = message.split(' ')
-	if len(message) - 1 == commands[command]['argc']:
-		return True
+  if commands[command]['argc'] == -1:
+    return True
+  else:
+  	message = message.split(' ')
+  	if len(message) - 1 == commands[command]['argc']:
+  		return True
 
 def check_returns_function(command):
 	if commands[command]['return'] == 'command': 
