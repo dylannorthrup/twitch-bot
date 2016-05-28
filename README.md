@@ -1,7 +1,9 @@
 Roboraj
 ==========
 
-This is a simple Twitch chat/irc bot written in python.
+Twitch chat bot modified to do Hex-related stuff.
+
+Based on https://github.com/aidanrt/twitch-bot
 
 
 Installation
